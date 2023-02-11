@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rest Countries App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__text">Where in the world?</h1>
+      <div class="mode">
+        <img src="images/mode_icon.png" alt="icon" class="mode__icon" />
+        <div class="mode__type">Dark Mode</div>
+      </div>
+    </header>
+
+    <div class="searching-box">
+      <div class="input">
+        <img src="images/search.png" alt="search icon" class="input__icon" />
+        <input
+          type="text"
+          class="input__searching"
+          placeholder="Search for a country..."
+        />
+      </div>
+
+      <form class="option-box">
+        <select name="" id="region" class="option-box__select">
+          <option value="" selected disabled hidden>Filter by Region</option>
+          <option value="africa">Africa</option>
+          <option value="america">America</option>
+          <option value="asia">Asia</option>
+          <option value="europe">Europe</option>
+          <option value="oceania">Oceania</option>
+        </select>
+      </form>
+    </div>
+
+    <main class="content">
+      <!-- <div class="country">
+        <img src="images/flag.png" alt="Country name" class="country__flag" />
+        <h2 class="country__data country__data--name">Germany</h2>
+        <p class="country__data country__data--population">
+          Population: <span>81,770,900</span>
+        </p>
+        <p class="country__data country__data--region">
+          Region: <span>Europe</span>
+        </p>
+        <p class="country__data country__data--capital">
+          Capital: <span>Berlin</span>
+        </p>
+      </div>
+
+      <div class="country">
+        <img src="images/flag.png" alt="Country name" class="country__flag" />
+        <h2 class="country__data country__data--name">Germany</h2>
+        <p class="country__data country__data--population">
+          Population: <span>81,770,900</span>
+        </p>
+        <p class="country__data country__data--region">
+          Region: <span>Europe</span>
+        </p>
+        <p class="country__data country__data--capital">
+          Capital: <span>Berlin</span>
+        </p>
+      </div>
+
+      <div class="country">
+        <img src="images/flag.png" alt="Country name" class="country__flag" />
+        <h2 class="country__data country__data--name">Germany</h2>
+        <p class="country__data country__data--population">
+          Population: <span>81,770,900</span>
+        </p>
+        <p class="country__data country__data--region">
+          Region: <span>Europe</span>
+        </p>
+        <p class="country__data country__data--capital">
+          Capital: <span>Berlin</span>
+        </p>
+      </div>
+
+      <div class="country">
+        <img src="images/flag.png" alt="Country name" class="country__flag" />
+        <h2 class="country__data country__data--name">Germany</h2>
+        <p class="country__data country__data--population">
+          Population: <span>81,770,900</span>
+        </p>
+        <p class="country__data country__data--region">
+          Region: <span>Europe</span>
+        </p>
+        <p class="country__data country__data--capital">
+          Capital: <span>Berlin</span>
+        </p>
+      </div>
+
+      <div class="country">
+        <img src="images/flag.png" alt="Country name" class="country__flag" />
+        <h2 class="country__data country__data--name">Germany</h2>
+        <p class="country__data country__data--population">
+          Population: <span>81,770,900</span>
+        </p>
+        <p class="country__data country__data--region">
+          Region: <span>Europe</span>
+        </p>
+        <p class="country__data country__data--capital">
+          Capital: <span>Berlin</span>
+        </p>
+      </div>
+
+      <div class="country">
+        <img src="images/flag.png" alt="Country name" class="country__flag" />
+        <h2 class="country__data country__data--name">Germany</h2>
+        <p class="country__data country__data--population">
+          Population: <span>81,770,900</span>
+        </p>
+        <p class="country__data country__data--region">
+          Region: <span>Europe</span>
+        </p>
+        <p class="country__data country__data--capital">
+          Capital: <span>Berlin</span>
+        </p>
+      </div>
+
+      <div class="country">
+        <img src="images/flag.png" alt="Country name" class="country__flag" />
+        <h2 class="country__data country__data--name">Germany</h2>
+        <p class="country__data country__data--population">
+          Population: <span>81,770,900</span>
+        </p>
+        <p class="country__data country__data--region">
+          Region: <span>Europe</span>
+        </p>
+        <p class="country__data country__data--capital">
+          Capital: <span>Berlin</span>
+        </p>
+      </div>
+
+      <div class="country">
+        <img src="images/flag.png" alt="Country name" class="country__flag" />
+        <h2 class="country__data country__data--name">Germany</h2>
+        <p class="country__data country__data--population">
+          Population: <span>81,770,900</span>
+        </p>
+        <p class="country__data country__data--region">
+          Region: <span>Europe</span>
+        </p>
+        <p class="country__data country__data--capital">
+          Capital: <span>Berlin</span>
+        </p>
+      </div> -->
+    </main>
+
+    <div class="going-back hidden">
+      <img src="images/back_icon.png" alt="Back" class="going-back__icon" />
+      <button class="going-back__btn">Back</button>
+    </div>
+
+    <div class="main-box hidden ">
+      <!-- <div class="img">
+        <img src="images/flag.png" alt="Flag" class="img__flag" />
+      </div>
+      <div class="content-box">
+        <div class="data-box">
+          <div class="data-content1">
+            <h2 class="data-content1__name">Belgum</h2>
+            <p class="data-content1__native-name">
+              Native Name: <span>België</span>
+            </p>
+
+            <p class="data-content1__population">
+              Population: <span>11,319,511</span>
+            </p>
+
+            <p class="data-content1__region">Region: <span>Europe</span></p>
+
+            <p class="data-content1__sub-region">
+              Sub Region: <span>Western Europe</span>
+            </p>
+
+            <p class="data-content1__capital">Capital: <span>Brussels</span></p>
+          </div>
+
+          <div class="data-content2">
+            <p class="data-content2__domian">
+              Top Level Domain: <span>.be</span>
+            </p>
+
+            <p class="data-content2__currencies">
+              Currencies: <span>Euro</span>
+            </p>
+
+            <p class="data-content2__languages">
+              Languages: <span>Dutch, French, German</span>
+            </p>
+          </div>
+        </div>
+        <div class="borders-box">
+          <p class="borders-box__text">Border Countries:</p>
+          <ul class="borders-box__ul" >
+            <li class="borders-box__ul--li">France</li>
+            <li class="borders-box__ul--li">Germany</li>
+            <li class="borders-box__ul--li">Netherlands</li>
+          </ul>
+        </div>
+      </div> -->
+    </div>
+  </body>
+</html>

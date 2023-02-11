@@ -1,0 +1,224 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-white;
+  //   margin: 4rem;
+  padding: 2rem 4rem;
+
+  &__text {
+    font-family: inherit;
+    font-size: 2.4rem;
+    font-weight: 800;
+  }
+
+  .mode {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+      height: 1.5rem;
+      width: 1.5rem;
+      margin-right: 1rem;
+    }
+
+    &__type {
+      font-family: inherit;
+      font-weight: 600;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.searching-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 7rem;
+
+  .input {
+    display: flex;
+    // padding: 4rem;
+    // background-color: $color-white;
+    position: relative;
+
+    &__icon {
+      height: 1.8rem;
+      width: 1.8rem;
+      margin-left: 2rem;
+      position: absolute;
+      top: 2rem;
+      left: 0;
+    }
+
+    &__searching {
+      padding: 2rem 20rem 2rem 6rem;
+      border: none;
+      border-radius: 1rem;
+      outline: none;
+    }
+  }
+}
+
+.option-box {
+  &__select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 7rem;
+  column-gap: 7rem;
+  width: 90%;
+  margin: 0 auto;
+
+  .country {
+  background-color: $color-white;
+
+    &__flag {
+      height: 16rem;
+      width: 27rem;
+    }
+
+    &__name {
+      font-family: inherit;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: $color-very-dark-blue2;
+      margin:1rem;
+    }
+
+    &__data {
+      font-size: 1.4rem;
+      margin-left: 3rem;
+
+      &--name{
+        margin: 2rem 3rem;
+      }
+
+      &--capital{
+        padding-bottom: 5rem;
+      }
+    }
+
+    span {
+      color: $color-dark-gray;
+    }
+  }
+}
+
+.going-back {
+  margin: 7rem;
+
+  position: relative;
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    top: 1.1rem;
+    left: 0;
+    margin-left: 1rem;
+  }
+
+  &__btn {
+    font-size: 1.6rem;
+    font-family: inherit;
+    font-weight: inherit;
+    padding: 1rem 4rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: $color-white;
+    cursor: pointer;
+  }
+}
+
+
+.main-box {
+  display: flex;
+  
+  // align-items: center;
+  // margin-top: 2rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: black;
+  margin-left: 3.5rem;
+  
+  .img{
+    &__flag {
+      width: 56rem;
+      height: 40rem;
+    }
+  }
+  
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  padding-left: 7rem;
+  margin-top: 5rem;
+  
+}
+
+.data-box {
+  display: flex;
+  align-items: center;
+  column-gap: 20rem;
+  
+  
+}
+
+.data-content1 {
+  &__name{
+    padding-bottom: 2rem;
+  }
+}
+
+span {
+  color: $color-dark-gray;
+  font-weight: 300;
+}
+
+.borders-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10rem;
+  
+  &__text {
+    font-weight: 600;
+  }
+  &__ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+    &--li {
+      font-size: 1.4rem;
+      font-family: inherit;
+      font-weight: 300;
+      padding: 0.5rem 2rem;
+      margin: 0 0.5rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 1px 2px inset #F0F0F0;
+      cursor: pointer;
+    }
+  }
+  
+}
+
+.hidden {
+  display: none;
+}
